@@ -2,7 +2,7 @@
 
 [ext_resource path="res://assets/box_material.tres" type="Material" id=1]
 [ext_resource path="res://scences/broken_box.tscn" type="PackedScene" id=2]
-[ext_resource path="res://breakable.gd" type="Script" id=3]
+[ext_resource path="res://script/breakable.gd" type="Script" id=3]
 
 [sub_resource type="CubeMesh" id=1]
 

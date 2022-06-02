@@ -1,7 +1,8 @@
-[gd_scene load_steps=5 format=2]
+[gd_scene load_steps=6 format=2]
 
-[ext_resource path="res://breakable.gd" type="Script" id=1]
+[ext_resource path="res://script/breakable.gd" type="Script" id=1]
 [ext_resource path="res://assets/bottle_material.tres" type="Material" id=2]
+[ext_resource path="res://scences/broken_bottle.tscn" type="PackedScene" id=3]
 
 [sub_resource type="ArrayMesh" id=1]
 resource_name = "bottle_Cylinder002"
@@ -22,6 +23,7 @@ points = PoolVector3Array( -0.605002, -0.134302, -0.000118554, -0.593394, -0.134
 
 [node name="bottle" type="Area"]
 script = ExtResource( 1 )
+resource = ExtResource( 3 )
 
 [node name="Cylinder001" type="MeshInstance" parent="."]
 mesh = SubResource( 1 )
